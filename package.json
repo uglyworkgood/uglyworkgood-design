@@ -1,14 +1,16 @@
 {
   "name": "uglyworkgood-design",
-  "version": "0.0.0",
+  "version": "0.0.6",
   "type": "module",
   "files": [
     "dist"
   ],
   "main": "./dist/uglyworkgood-design.umd.cjs",
   "module": "./dist/uglyworkgood-design.js",
+  "types": "./dist/globals.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/globals.d.ts",
       "import": "./dist/uglyworkgood-design.js",
       "require": "./dist/uglyworkgood-design.umd.cjs"
     }
@@ -23,9 +25,11 @@
   },
   "dependencies": {
     "@types/node": "^24.2.1",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
     "vite-tsconfig-paths": "^5.1.4"
+  },
+  "peerDependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
@@ -39,6 +43,7 @@
     "path": "^0.12.7",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.0",
-    "vite": "^7.1.0"
+    "vite": "^7.1.0",
+    "vite-plugin-dts": "^4.5.4"
   }
 }

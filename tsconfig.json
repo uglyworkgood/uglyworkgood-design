@@ -10,13 +10,10 @@
       "uglyworkgood-design/*": ["./dist/*"]
     },
 
-    // Bundler options
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
-
-    // Linting
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -24,8 +21,12 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./lib",
+    "types": [],
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": false,
   },
-  "include": ["src/**/*.ts"],
+  "include": ["lib", "globals.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

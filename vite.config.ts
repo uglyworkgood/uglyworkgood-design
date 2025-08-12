@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url';
 import path from 'path';
 import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import dts from 'vite-plugin-dts';
 
 // ESM-friendly __dirname replacement
 const __filename = fileURLToPath(import.meta.url);
@@ -10,7 +11,15 @@ const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
+  plugins: [react(),
+    tsconfigPaths(),
+     dts({
+      entryRoot: 'lib',
+      outDir: 'dist',
+      insertTypesEntry: true,
+      include: ['lib', 'lib/globals.d.ts'] 
+  })
+],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'lib/main.ts'),
