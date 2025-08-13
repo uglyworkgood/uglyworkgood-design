@@ -1,1 +1,1 @@
-{"root":["./lib/globals.d.ts","./lib/main.ts","./lib/Button/Button.tsx"],"version":"5.8.3"}
+{"root":["./lib/globals.d.ts","./lib/main.ts","./lib/Button/Button.tsx","./lib/Terminal/Terminal.tsx"],"version":"5.8.3"}

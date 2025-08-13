@@ -67,3 +67,21 @@ export default tseslint.config([
   },
 ])
 ```
+
+## Terminal component
+
+The `Terminal` component accepts a `commands` prop that maps user input to
+terminal output. When a command is entered, the command and the associated
+response are written to the terminal.
+
+```tsx
+import { Terminal } from 'uglyworkgood-design';
+
+<Terminal
+  commands={{
+    help: 'Available commands: help, ping',
+    ping: 'pong',
+  }}
+/>
+```
+
