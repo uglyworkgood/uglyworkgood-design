@@ -1,0 +1,57 @@
+.uglyworkgood-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.uwg-variant-solid {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+.uwg-variant-outline {
+  background-color: transparent;
+  color: #1f2937;
+  border-color: currentColor;
+}
+
+.uwg-variant-ghost {
+  background-color: transparent;
+  color: #1f2937;
+}
+
+.uwg-variant-link {
+  background: none;
+  color: #2563eb;
+  padding: 0;
+  border-color: transparent;
+}
+
+.uwg-variant-dashed {
+  background-color: transparent;
+  color: #1f2937;
+  border-color: currentColor;
+  border-style: dashed;
+}
+
+.uwg-spinner {
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  animation: uwg-spin 0.75s linear infinite;
+}
+
+@keyframes uwg-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
