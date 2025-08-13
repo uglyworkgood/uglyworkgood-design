@@ -4,10 +4,11 @@ import React, {
   type ButtonHTMLAttributes,
   type ReactNode,
 } from 'react';
+import './Button.css';
 
 type CommonProps = {
   children?: ReactNode;
-  variant?: 'solid' | 'outline' | 'ghost' | 'link';
+  variant?: 'solid' | 'outline' | 'ghost' | 'link' | 'dashed';
   size?: 'sm' | 'md' | 'lg';
   fullWidth?: boolean;
   loading?: boolean;
