@@ -1,0 +1,32 @@
+.uglyworkgood-terminal {
+  background-color: #000;
+  color: #0f0;
+  padding: 1rem;
+  font-family: monospace;
+}
+
+.uwg-terminal-lines {
+  min-height: 10rem;
+  margin-bottom: 0.5rem;
+}
+
+.uwg-terminal-line {
+  white-space: pre-wrap;
+}
+
+.uwg-terminal-input {
+  display: flex;
+}
+
+.uwg-terminal-prompt {
+  margin-right: 0.5rem;
+}
+
+.uwg-terminal-input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
